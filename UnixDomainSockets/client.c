@@ -31,8 +31,9 @@ int main(int args, char* argv[])
     while(1)
     {
         int data;
+        printf("Input a number\n");
         scanf("%d", &data);
-        printf("Sending result\n");
+        printf("Sending data\n");
         ret = send(data_socket,&data,sizeof(int),0);
         if(ret == -1)
         {
